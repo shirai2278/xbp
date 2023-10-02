@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <!-- ⑥↓タイトルを変えてみよう -->
+    <title>しらいのページ</title>
+    <!-- ⑤スタイルシートの設定をしよう -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- h1.htmlからある行をコピペしてくればOK -->
+</head>
+<body>
+    <h1>第1回</h1>
+    <h2>Gitに関して</h2>
+    <h2>◎Gitとは？</h2>
+    <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
+    <div>
+         <!-- ①↓に文字を書いてみよう -->
+         ファイルやディレクトリの変更履歴（バージョン）を管理する、分散型バージョン管理システム。<br>
+         <br>
+         通常のファイルは上書き保存を何度も繰り返す場合、最新の保存状態しか確認できない。<br>
+         しかし、Gitのようなバージョン管理システムでは、各変更履歴におけるファイルの状態を保存することができる。<br>
+
+         <!-- ②↓に画像（imagesフォルダにあるtest.png）を挿入してみよう -->
+         <img src="./images/git_1.png" width="40%"><br>
+
+         <!-- ③↓に箇条書きをしてみよう -->
+
+         <!-- ④↓に外部リンクを作ってみよう -->
+         引用：<a href="https://amg-solution.jp/blog/27854#toc___1">AMG Solution</a><br>
+
+    </div>
+
+    <h2>◎GitとGitHubの違い</h2>
+    <h3>＊GitHubとは？</h3>
+    <div>
+        Gitの仕組みを利用したWebサービス。<br>
+        Gitをベースとして、皆が書いたコードを自由に見たり、修正すべき部分を指摘し合ったりすることが出来る。
+    </div>
+    <h3>＊GitHub 2つの機能</h3>
+    <div>
+        ＜フォーク＞<br>
+        他人が書いたコードのリモートリポジトリを、自分のリモートリポジトリにコピーすることが出来る。<br>
+        ＜プルリクエスト＞<br>
+        開発者のローカルリポジトリでの変更を、他の開発者に知らせる機能。<br>
+        <br>
+        引用：<a href="https://and-engineer.com/articles/Yt4s9BAAACEA700C#heading3-2">アンドエンジニア</a><br>
+        <a href="https://www.sejuku.net/blog/74318#index_id1">SAMURAI ENGINEER Blog</a>
+    </div>
+
+    <h2>◎基本用語</h2>
+    <h3>＊リポジトリ</h3>
+    <div>
+        変更履歴を管理している場所の事。それぞれのバージョンでのディレクトリやファイルの状態が記録されている。<br>
+        リポジトリには下記の2種類がある。<br>
+        <br>
+        ＜リモートリポジトリ＞<br>
+        皆で共有するためのリポジトリ。サーバー上に配置されている。<br>
+        ＜ローカルリポジトリ＞<br>
+        個人で作業するためのリポジトリ。各個人のPCに配置する。<br>
+        <img src="./images/git_2.png" width="40%">
+    </div>
+    <h3>＊ブランチ</h3>
+    <div>
+        複数の作業を並行して進めたいとき、他の画面の変更内容が含まれないように、作業の変更履歴を分けるために作成される。<br>
+        <img src="./images/git_3.png" width="40%"><br>
+        上記では、masterブランチは本番と同じ内容を保持しているブランチ、ブランチA及びブランチBは作業をするためのブランチと考える。
+    </div>
+    <h3>＊コミット</h3>
+    <div>
+        ブランチAの修正をローカルで行った場合、この内容をブランチAに反映させる手順。<br>
+        <img src="./images/git_4.png" width="40%"><br>
+        コミットを行った段階では、ローカルリポジトリに対してのみ変更が反映されている状態になっている。
+    </div>
+    <h3>＊プッシュ</h3>
+    <div>
+        ローカルリポジトリでの変更内容をリモートリポジトリに反映させるために行う。<br>
+        これにより、ローカルリポジトリのブランチAの変更内容がリモートリポジトリのブランチAに反映される。<br>
+        <img src="./images/git_5.png" width="40%"><br>
+        <img src="./images/git_6.png" width="40%">
+    </div>
+    <h3>＊マージ</h3>
+    <div>
+        ブランチを統合させる手順。<br>
+        masterブランチをブランチAにマージすることで、この2つのブランチは同じ状態となる。<br>
+        <img src="./images/git_7.png" width="40%"><br>
+        <img src="./images/git_8.png" width="40%"><br>
+        <br>
+        引用：<a href="https://amg-solution.jp/blog/27854#toc___1">AMG Solution</a>
+    </div>
+
+    <h2>◎よく使うGitコマンド</h2>
+    <div>
+        <ul>
+        <li>git init ：リポジトリを新規作成</li>
+        <li>git clone ：リポジトリをコピー</li>
+        <li>git gc ：リポジトリを最適化</li>
+        <li>git pull ：リモートリポジトリの変更点をローカルリポジトリにマージ</li>
+        <li>git push ：ローカルリポジトリの変更点をリモートリポジトリにマージ</li>
+        <li>git add ：コミット対象のファイルを登録</li>
+        <li>git commit ：変更されたファイルをコミット（ローカルリポジトリに変更内容を入れ込む）</li>
+        <li>git reset ：直前のコミットを取り消し</li>
+        <li>git revert ：特定のコミットを取り消し</li>
+        <li>git tag ：コミットにタグを付ける</li>
+        <li>git log ：コミット履歴を表示</li>
+        <li>git status ：作業ツリー内の差分ファイルを表示</li>
+        <li>git diff ：ファイル内の差分箇所を表示</li>
+        <li>git mv ：ファイルを移動／ファイル名を変更</li>
+        <li>git stash ：作業ツリーの状態を一時的に保存</li>
+        <li>git branch ：ブランチの作成／一覧表示</li>
+        <li>git checkout ：処理対象ブランチの切り替え</li>
+        <li>git merge ：別のブランチから変更点をマージ</li>
+        <li>git rebase ：派生元ブランチに変更点をマージ</li>
+        </ul>
+        引用：<a href="https://www.sejuku.net/blog/5816#index_id1">SAMURAI ENGINEER Blog</a>
+        
+    </div>
+
+    <h2>htmlに関して</h2>
+    <h2>◎htmlとは？</h2>
+    <div>
+        Webページの記述言語。<br>
+        ルールに従って記述されたテキストファイルをhtmlドキュメントと呼び、これをブラウザが読み込むことで、Webページを表示させることができる。<br>
+        また、正式名称は、”HyperText Markup Language” という。日本語に直すと、ハイパーテキストをマークアップする言語、という意味。<br>
+        
+    </div>
+    <h3>＊特徴</h3>
+    <div>
+        <ul>
+            <li>マークアップ</li>
+            テキストの一部を＜タグ＞と呼ばれる記号で囲むことで、テキストの構造や文章の役割を示すこと。<br>
+            <li>ハイパーテキスト</li>
+            独立した文書を相互に関連づける機能（ハイパーリンク）を持った文書のこと。<br>
+            ※普段私たちが使っているWebページにあるボタンやリンクはハイパーテキストと呼ばれ、リンク先のWebページとつながることができるという機能をハイパーリンクと呼ぶ。
+        </ul>
+        引用：<a href="https://www.itra.co.jp/webmedia/what-is-html.html">Web Media</a>
+    </div>
+
+</body>
+</html>
