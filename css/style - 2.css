@@ -27,20 +27,10 @@ html, body {
 	color: #393939;
     margin-left: 15px;
     margin-bottom: 40px;
-    height: 250px;                          /* 高さ指定 */
-    padding:  20px;                         /* 余白指定 */
-    font-size: 20px;                        /* 文字サイズ指定 */
-    background-color: rgb(228, 224, 137);   /* 背景色指定 */
+	background: #efefef;
 }
 h1{
     text-indent: 0em;
-    color:  #fff;                           /* 文字色指定 */
-    width:  1000px;                          /* 幅指定 */
-    font-size:  50px;                       /* 文字サイズ指定 */
-    background-color: rgb(255, 152, 0);     /* 背景色指定 */
-    padding:  20px;                         /* 余白指定 */
-    float:  left top;                          /* 位置指定 */
-    position:  relative;                    /* 位置指定 */                             /* 位置指定 */
 }
 h2{
     margin-left: 1em;
@@ -48,7 +38,6 @@ h2{
 }
 h3{
     margin-left: 2em;
-    
 }
 div{
     margin-top: 1em;
