@@ -27,15 +27,34 @@ html, body {
 	color: #393939;
     margin-left: 15px;
     margin-bottom: 40px;
-	background-color: #efefef;
+	background-color: rgb(228, 224, 137);   /* 背景色指定 */
 }
 h1{
     text-indent: 0em;
-   
+    position: relative;
+  padding: 1rem 2rem calc(1rem + 8px);
+  background: #fff;
+  width: 500px;
+}
+h1:before {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: 4px solid #000;
 }
 h2{
     margin-left: 1em;
     margin-top: 1em;
+    color:  #fff;                           /* 文字色指定 */
+    width:  700px;                          /* 幅指定 */
+    font-size:  30px;                       /* 文字サイズ指定 */
+    background-color: rgb(255, 152, 0);     /* 背景色指定 */
+    padding:  20px;                         /* 余白指定 */
+    float: left;
+    position:  relative;                    /* 位置指定 */
 }
 h3{
     margin-left: 2em;
@@ -43,7 +62,8 @@ h3{
 div{
     margin-top: 1em;
     margin-left: 3em;
-    
+    font-size:  20px;                       /* 文字サイズ指定 */
+    color: #000;
 }
 p{
     margin-left: 3em;
