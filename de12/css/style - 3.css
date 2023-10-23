@@ -22,7 +22,7 @@ logotohome img{
 
 /* ========== common ========== */
 html, body {
-    font-size: 16px;
+	font-size: 16px;
 	font-family: sans-serif;
 	color: #393939;
     margin-left: 15px;
@@ -40,28 +40,29 @@ h1{
   width: 500px;
 }
 h1:before {
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    width: 100%;
-    height: 100%;
-    content: '';
-    border: 4px solid #000;
-  }  
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: 4px solid #000;
+}
+
 h2{
     margin-left: 1em;
     margin-top: 1em;
     color:  #fff;                           /* 文字色指定 */
     width:  700px;                          /* 幅指定 */
-    font-size:  40px;                       /* 文字サイズ指定 */
-    background-color: rgb(250, 170, 0);     /* 背景色指定 */
+    font-size:  30px;                       /* 文字サイズ指定 */
+    background-color: rgb(255, 152, 0);     /* 背景色指定 */
     padding:  20px;                         /* 余白指定 */
     float: left;
     position:  relative;                    /* 位置指定 */
 }
 h3{
     margin-left: 2em;
-    font-size: 30px;
+    
 }
 div{
     margin-top: 1em;
