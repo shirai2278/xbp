@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <title>デザイン演習課題4</title>
+    <!-- ⑤スタイルシートの設定をしよう -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- h1.htmlからある行をコピペしてくればOK -->
+</head>
+<body>
+    <h1>ゲーム制作</h1>
+    <h2>3班</h2>
+    <div>
+        【メンバー】
+        ツナ、てる、えっと、しらい、木村涼
+    </div>
+    <h2>ゲーム概要</h2>
+    <div>
+        私たちの班は、サッカーにおけるPKの対戦型ゲームを作成しました。全5回戦で、プレイヤーはキッカーのみできる状態にしました。
+    </div>
+    <h2>ソースコード</h2>
+    <div>
+        <pre><code>
+            score=0
+
+print("PK対決! 全5回戦")
+name=input("挑戦者の名前は？")
+print(name, "さんはキッカーです。")
+
+#----------------------------------------------------------- 
+print("1回目")
+print("1.左 2.中央 3.右")
+selecta = int(input("コースを数字で入力してね。"))
+import random
+a = random.randint(1,3)
+if selecta == a:
+    print("goal!")
+    scorea=score+1
+else:
+    print("miss...")
+    scorea=score+0
+#---------------------------------------------------------
+print("2回目")
+print("1.左 2.中央 3.右")
+selectb = int(input("コースを数字で入力してね。"))
+import random
+b = random.randint(1,3)
+if selectb == b:
+    print("goal!")
+    scoreb=score+1
+else:
+    print("miss...")
+    scoreb=score+0
+#----------------------------------------------------------
+print("3回目")
+print("1.左 2.中央 3.右")
+selectc = int(input("コースを数字で入力してね。"))
+import random
+c = random.randint(1,3)
+if selectc == c:
+    print("goal!")
+    scorec=score+1
+else:
+    print("miss...")
+    scorec=score +0
+#---------------------------------------------------------------------
+print("4回目")
+print("1.左 2.中央 3.右")
+selectd = int(input("コースを数字で入力してね。"))
+import random
+d = random.randint(1,3)
+if selectd == d:
+    print("goal!")
+    scored=score+1
+else:
+    print("miss...")
+    scored=score+0
+#--------------------------------------------------------------------------
+print("5回目")
+print("1.左 2.中央 3.右")
+selecte = int(input("コースを数字で入力してね。"))
+import random
+e = random.randint(1,3)
+if selecte == e:
+    print("goal!")
+    scoree=score+1
+else:
+    print("miss...")
+    scoree=score+0
+#----------------------------------------------------------------------------
+print("試合終了")
+
+if score==scorea+scoreb+scorec+scored+scoree>=3:
+    print(name,"さんの勝利、おめでとう!")
+else:
+    print(name,"さんの敗北...お疲れ様でした。")
+
+        </code></pre>
+    </div>
+    <h2>ふり返り</h2>
+    <div>
+        どのようなゲームを作りたいか、具体的な手順を考えながら慣れないコードを時々調べつつ入力していくのが大変でした。トライアンドエラーを何度も繰り返して、期限内にホームページへ上げることは出来なかったけれど、納得のいくゲームを製作できてうれしかったです。今回の課題をとおして、プログラミングにおける正確なソースコードの重要さが分かりました。とても難しい作業でしたが、作っていて楽しかったです。<br>
+
+        <ul>【反省点】
+            <li>2人で対戦する方式で作ろうとしたが、調べても分からなかったため、プレイヤーはキッカーしかプレイできない形式になった。</li>
+            <li>繰り返しの設定ができなかった。</li>
+            <li>ソースコードが長くなった。もっと短縮できたかもしれない。</li>
+            <li>期限内に作りきれなかった。（個人）</li>
+    </div>
+        </ul>
+
+</body>
+</html>
