@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <!-- ⑥↓タイトルを変えてみよう -->
+    <title>第5回デザイン演習課題</title>
+    <!-- ⑤スタイルシートの設定をしよう -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>家計簿 ～Excelとともに～</h1>
+    <h2>概要</h2>
+    <div>
+        VSCで入力したデータをExcel上で表にするために、データ分析ライブラリ『pandas』を使用しました。授業日には連携ができたのですが、このページを作成した日にはできなくなってしまっていたので、改善していきます。<br>
+        仕組みとしては、日付・用途(詳細)・金額・収支を入れることで、収支の一覧表になります。さらに支出に関しては、縦軸を金額、横軸を用途のカテゴリとした棒グラフが表示されます。この棒グラフも数値が合わないことがあるので、改善が必要です。
+    </div>
+    <h2>ソースコード</h2>
+    <div>
+        <pre><code>
+            import pandas as pd
+import japanize_matplotlib
+
+#Excelファイルを読み込む
+df = pd.read_excel('C:/Users/haru-/mygit/xbp/de12/python/filespy/家計簿.xlsx')
+
+#データフレームを出力する
+print(df)
+
+# データを追加
+new_entry = {'日付': '2023-10-31', '詳細': 'アルバイト1', '金額': 74000, '収支': '収入'}
+new_entry = {'日付': '2023-10-31', '詳細': '食費', '金額': 500, '収支': '支出'}
+new_entry = {'日付': '2023-10-31', '詳細': 'その他', '金額': 2000, '収支': '支出'}
+
+se = pd.Series(new_entry).to_frame().T
+df = pd.concat([df, se], axis=0)
+# df = df.append(new_entry, ignore_index=True)
+
+# データをExcelファイルに書き込み
+df.to_excel('C:/Users/haru-/mygit/xbp/de12/python/filespy/家計簿.xlsx', index=False)
+# 収支を計算
+income = df[df['収支'] == '収入']['金額'].sum()
+expenses = df[df['収支'] == '支出']['金額'].sum()
+balance = income - expenses
+import matplotlib.pyplot as plt
+
+# カテゴリー別の支出をプロット
+category_expenses = df[df['収支'] == '支出'].groupby('詳細')['金額'].sum()
+category_expenses.plot(kind='bar')
+plt.xlabel('カテゴリー')
+plt.ylabel('支出')
+plt.title('カテゴリー別支出')
+plt.show()
+
+# import pandas as pd
+
+# initial_data = {
+#     '日付': [],
+#     '詳細': [],
+#     '金額': [],
+#     '収支': []
+# }
+
+# df = pd.DataFrame(initial_data)
+
+# # 新しいExcelファイルを作成
+# df.to_excel('家計簿.xlsx', index=False)
+
+        </code></pre>
+    </div>
+
+</body>
+</html>
