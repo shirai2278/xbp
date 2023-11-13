@@ -1,61 +1,60 @@
 <!DOCTYPE html>
 <html lang="jp">
 <head>
-    <!-- ⑥↓タイトルを変えてみよう -->
-<<<<<<< HEAD
-    <title>〇〇のテストページ</title>
-    <!-- ⑤スタイルシートの設定をしよう -->
-=======
-    <title>しらいのテストページ</title>
+    <title>第6回デザイン演習課題</title>
     <!-- ⑤スタイルシートの設定をしよう -->
     <link rel="stylesheet" href="./css/style.css">
->>>>>>> ad4b98c248360da41aa47452c1ba3690e1009cb5
-    <!-- h1.htmlからある行をコピペしてくればOK -->
 </head>
 <body>
-    <h1>見出し</h1>
-    <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
+    <h1>7班 おすすめ物件分析</h1>
+    <h2>対象者</h2>
     <div>
-         <!-- ①↓に文字を書いてみよう -->
-<<<<<<< HEAD
-
-         <!-- ②↓に画像（imagesフォルダにあるtest.png）を挿入してみよう -->
-
-         <!-- ③↓に箇条書きをしてみよう -->
-
-         <!-- ④↓に外部リンクを作ってみよう -->
-=======
-<div>
-    これはテストです。<br>
-    ああああああ
-</div>
-         <!-- ②↓に画像（imagesフォルダにあるtest.png）を挿入してみよう -->
-         <img src="./images/testimage.png" width="80%"><br>
-         <img src="../images/0_XBlogo.png"><br>
-         <img src="../digi_fab/images/0_XBlogo.png">
-
-         <!-- ③↓に箇条書きをしてみよう -->
-         <ol>
-            <li>ああああああ</li><br>
-            <li>いいいいいい</li>
-         </ol>
-         <ul>
-            <li>うううううう</li><br>
-            <li>ええええええ</li>
-         </ul>
-
-         <!-- ④↓に外部リンクを作ってみよう -->
-         <a href="./index.html">デザイン演習Ⅰ・Ⅱトップページ</a><br>
-         <a href="../index.html">XBPトップページ</a><br>
-         <a href="http://www.yahoo.co.jp/" target="_blank">Yahoo</a><br>
-         <a href="./files/test.pdf" target="_blank">pdfファイル</a>
-         <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jJzw1h5CR-I?si=96O_WzCg18xp_wxD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
-            引用:Eve OFFICIAL CHANNEL ドラマツルギー-Eve MV
-         </div>
->>>>>>> ad4b98c248360da41aa47452c1ba3690e1009cb5
-
+        <ul>
+            <li>神奈川大学学生</li>
+            <li>来年度以降の神奈川大学入学者</li>
+            <li>東急東横線を利用する人</li>
+            <li>一人暮らしを考えている人</li>
+        </ul>
+        など
     </div>
+    <h2>条件</h2>
+    <div>
+        <ol>
+            <li>徒歩</li>
+            <li>家賃</li>
+        </ol>
+    </div>
+    <h2>結果</h2>
+    <h3>東急東横線の徒歩と家賃</h3>
+    <img src="./images/東急東横線の徒歩と家賃(編).png" width="50%">
+    <div>
+        上記分布図から、ほとんどの駅は中央に寄っていることが分かります。しかし、5つの駅が突出していることも読み取れます。<br>
+        ※おそらく平均<br>
+        【大多数の駅】徒歩:約12~14分 家賃:約7~9万円<br>
+        【突出した5駅】<br>
+        <ul>
+            <li>[新丸子駅]徒歩:約9~10分以内 家賃:約9万円 → 駅は近いが、家賃高め</li>
+            <li>[東白楽駅][白楽駅]徒歩:約11~12分 家賃:約6万~6万5,000円 → 駅が近く家賃も安いため、比較的住みやすそう</li>
+            <li>[横浜駅]徒歩:約12~13分 家賃:約10万円 → 家賃が高い</li>
+            <li>[多摩川駅]徒歩:約17分以上 家賃:約8万円 → 家賃はそこそこだが、駅が遠い</li>
+        </ul>
+    </div>
+    <h3>東急東横線の徒歩別の平均家賃</h3>
+    <img src="./images/東急東横線の徒歩別の平均家賃(編).png" width="70%">
+    <div>
+        【全体的に見て】<br>
+        <ul>
+            <li>全体平均家賃6万円以上</li>
+            <li>徒歩30分前後の平均家賃が比較的高め</li>
+        </ul>
+        【特に気になったこと】<br>
+        <ul>
+            <li>徒歩0分のところが平均家賃10万円と高い → 駅が近く、交通の便が良いからと考えられる。</li>
+            <li> なぜか徒歩40分程度の平均家賃が10万円以上と高い。対して、徒歩37分程度のところは平均家賃6万円弱と比較的安い</li>
+        </ul>
+    </div>
+    <h2>反省</h2>
+    <div>グラフの読み取りが正確ではありません。あくまで推測で分析してみました。</div>
 
 </body>
 </html>
