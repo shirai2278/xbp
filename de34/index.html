@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>しらいのデザイン演習Ⅲ・Ⅳ</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./images/xbp.ico">
+<meta charset="UTF-8">
+<title>しらい　2年次XBP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <logotohome>
-    <a href="../index.html"><img src="./images/0_XBlogo.png" alt=""></a>
-    </logotohome>
-    <h1>デザイン演習Ⅲ・Ⅳ</h1>
-        <h2>演習ノート一覧</h2>
-        <ul>
-        <li><a href="./1.html" target="_blank">第1回 </a></li>
-        </ul>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html">しらい　2年次XBP</a></h1>
+</header>
+
+<!--メインメニュー-->
+<nav id="menubar">
+<ul>
+<li><a href="../de12/index.html">デザイン演習Ⅰ・Ⅱ HOME</a></li>
+<li><a href="index.html">デザイン演習Ⅲ・Ⅳ HOME</a></li>
+<li><a href="../de56/index.html">デザイン演習Ⅴ・Ⅵ HOME</a></li>
+<li><a href="../index.html">ポートフォリオ</a></li>
+</ul>
+</nav>
+
+<!--スライドショー（slick）-->
+<div class="mainimg">
+<div><img src="images/xbp.ico" width="30%"></div>
+</div>
 
 
-    
-<br>
-<br>
+</div>
+<!--/#container-->
 
+<!--jQueryファイルの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.js"></script>
+
+<!--ページの上部へ戻るボタンとスクリプト-->
+<p class="pagetop"><a href="#">↑</a></p>
+<script src="js/openclose_tp.js"></script>
 
 </body>
 </html>
