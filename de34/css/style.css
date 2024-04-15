@@ -51,7 +51,7 @@ section + section {
 video {max-width: 100%;}
 
 /*iframeタグ*/
-iframe {width: 100%;}
+iframe {width: 70%; margin: auto;display: block;}
 
 /*リンクテキスト全般の設定
 ---------------------------------------------------------------------------*/
