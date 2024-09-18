@@ -216,7 +216,7 @@ footer h5 {
     text-align: center;
 }
 #pagetop a:hover {
-    background: var(--linkhover-color:);
+    background: var(--linkhover-color);
 }
 /*パンくずリスト
 -----------------------------------*/
