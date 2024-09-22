@@ -450,6 +450,29 @@ main {
 ---------------------------------------------------------------------------*/
 .ws {width: 45%;display: inline-block;}
 
+/*横並び*/
+.flex {
+	display: flex; /*横並び*/
+}
+.flex .image {
+	width: 640px; /*画像サイズ指定*/
+	margin: 0;
+	padding: 0;
+}
+.flex .image img {
+	width: 100%;
+	height: auto;
+}
+.flex .text {
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+body {
+	margin: 20px;
+	padding: 0;
+}
+
 /*　※注意！　下の閉じカッコ　}　は800px以上の設定に必要なので、うっかり削除しないように。　*/
 
 }
+
